@@ -555,7 +555,6 @@ main {
   line-height: 1.6;
 }
 
-
 /**
  * #testimonials 
  */
@@ -606,6 +605,8 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+
 
 
 /**
@@ -1026,6 +1027,46 @@ main {
   font-weight: var(--fw-300);
 }
 
+/*-----------------------------------*\
+  #certification
+\*-----------------------------------*/
+
+.certification-list {
+    margin-top: 20px; /* Space above the list */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between certification items */
+}
+
+.certification-item {
+    border: 1px solid #444; /* Darker border for better contrast */
+    padding: 15px;
+    display: flex;
+    align-items: center; /* Align items to the center vertically */
+    background-color: #222; /* Dark background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.certification-image {
+    max-width: 500px; /* Adjust the size as needed */
+    margin-right: 20px; /* Space between the image and the text */
+    border: 1px solid #333;
+    border-radius: 4px; /* Rounded corners for the image */
+}
+
+.certification-item h3 {
+    margin-top: 0; /* Remove the default margin */
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+}
+
+.certification-item p {
+    margin: 5px 0; /* Adjust the spacing between paragraphs */
+    color: #ccc; /* Light grey text color */
+}
+
+
 
 
 
@@ -1391,6 +1432,73 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* service */
 
+   /* service */
+
+  .service-title { margin-bottom: 40px; }
+  .college-details{ margin-bottom: 40px; }
+  .experience-details{ 
+            
+            margin-top: 40px;
+            align-items: center;}
+  .service-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 30px;
+  }
+
+  .service-icon-box {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .service-content-box { text-align: left; }
+
+  /* testimonials */
+
+  .skills-section {
+            background-color: #444;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+  .skills-section img {
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+  .skills-section div {
+            flex: 1;
+        }
+
+   .skills-section h3 {
+            margin: 0 0 10px 0;
+        }
+
+    .skills-section p {
+            margin: 5px 0;
+        }
+    .skills-section {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+    .skill {
+            text-align: center;
+            margin-right: 20px;
+            flex: 0 0 auto; /* Ensure the items do not shrink */
+        }
+
+    .skill img {
+            display: block;
+            margin: 0 auto 10px;
+            width: 100px;
+            height: 100px;
+        }
   .service-item {
     display: flex;
     justify-content: flex-start;
@@ -1500,6 +1608,35 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
+  /* Add some vertical space between the text and the button */
+.timeline h2 {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+/* Style the box around the button */
+.download-box {
+    border: 2px solid white; /* Box border */
+    padding: 10px; /* Space inside the box */
+    display: inline-block; /* Fit the box to the button size */
+    background-color: #333; /* Box background color */
+}
+
+/* Style the button */
+.download-box button {
+    background-color: transparent; /* Button background */
+    border: none; /* Remove default button border */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Optional: Add hover effect for the button */
+.download-box button:hover {
+    background-color: white; /* Background on hover */
+    color: #333; /* Text color on hover */
+}
+
+
 
 
   /**
@@ -1593,7 +1730,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .modal-avatar-box img { width: 80px; }
 
+ /**
+   * CERTIFICATIONS
+   */
 
+  .certification-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding-left: 5px;
+    margin-bottom: 30px;
+
+  }
 
   /**
    * PORTFOLIO
@@ -1874,8 +2023,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-	 * RESUME
-	 */
+   * RESUME
+   */
 
   .timeline-text { max-width: 700px; }
 

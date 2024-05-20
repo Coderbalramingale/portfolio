@@ -1028,6 +1028,48 @@ main {
 }
 
 /*-----------------------------------*\
+  #Testimonial
+\*-----------------------------------*/
+
+
+.Testimonial-list {
+    margin-top: 20px; /* Space above the list */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between certification items */
+}
+
+.Testimonial-item {
+    border: 1px solid #444; /* Darker border for better contrast */
+    padding: 15px;
+    display: flex;
+    align-items: center; /* Align items to the center vertically */
+    background-color: #222; /* Dark background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.Testimonial-image {
+    max-width: 500px; /* Adjust the size as needed */
+    margin-right: 20px; /* Space between the image and the text */
+    border: 1px solid #333;
+    border-radius: 4px; /* Rounded corners for the image */
+}
+
+.Testimonial-item h3 {
+    margin-top: 0; /* Remove the default margin */
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+}
+
+.Testimonial-item p {
+    margin: 5px 0; /* Adjust the spacing between paragraphs */
+    color: #ccc; /* Light grey text color */
+}
+
+
+
+/*-----------------------------------*\
   #certification
 \*-----------------------------------*/
 
@@ -1904,6 +1946,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-banner-box { height: 230px; }
 
 }
+
 
 
 

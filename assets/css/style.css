@@ -1111,62 +1111,59 @@ main {
 
 
 
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-.blog-posts { margin-bottom: 10px; }
+/* BLOG */
+.blog-posts {
+  margin-bottom: 20px; /* Increased spacing for better layout */
+}
 
 .blog-posts-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Uniform spacing between items */
 }
 
 .blog-post-item > a {
   position: relative;
   background: var(--border-gradient-onyx);
-  height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
-  z-index: 1;
+  overflow: hidden; /* Ensures content stays within the border */
+  width: 100%; /* Ensure items stretch to full width */
+  transition: transform 0.3s ease; /* Added hover effect */
 }
 
-.blog-post-item > a::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  border-radius: inherit;
-  background: var(--eerie-black-1);
-  z-index: -1;
+.blog-post-item > a:hover {
+  transform: translateY(-5px); /* Slight hover lift for interactivity */
 }
 
 .blog-banner-box {
   width: 100%;
-  height: 200px;
+  height: 200px; /* Adjusted height for better proportions */
   border-radius: 12px;
   overflow: hidden;
+  margin-bottom: 15px; /* Add spacing between image and content */
 }
 
 .blog-banner-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: var(--transition-1);
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
 }
 
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
+.blog-post-item > a:hover .blog-banner-box img {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
 
-.blog-content { padding: 15px; }
+.blog-content {
+  padding: 20px; /* Slightly increased padding for better readability */
+}
 
 .blog-meta {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  gap: 7px;
-  margin-bottom: 10px;
+  gap: 10px; /* Better spacing between meta elements */
+  margin-bottom: 15px; /* Added more spacing from the title */
 }
 
 .blog-meta :is(.blog-category, time) {
@@ -1177,18 +1174,21 @@ main {
 
 .blog-meta .dot {
   background: var(--light-gray-70);
-  width: 4px;
-  height: 4px;
-  border-radius: 4px;
+  width: 6px; /* Slightly larger for better visibility */
+  height: 6px;
+  border-radius: 50%;
 }
 
 .blog-item-title {
-  margin-bottom: 10px;
-  line-height: 1.3;
-  transition: var(--transition-1);
+  margin-bottom: 15px; /* Increased spacing below the title */
+  font-size: 1.4rem; /* Adjusted font size for better hierarchy */
+  line-height: 1.4;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
+.blog-post-item > a:hover .blog-item-title {
+  color: var(--orange-yellow-crayola); /* Highlight title on hover */
+}
 
 .blog-text {
   color: var(--light-gray);
@@ -1197,8 +1197,29 @@ main {
   line-height: 1.6;
 }
 
+/* Styling for blog links */
+.blog-link {
+  color: #FFD700; /* Gold color for high visibility */
+  text-decoration: underline; /* Add underline for better distinction */
+  font-weight: bold; /* Emphasize the link */
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
 
+.blog-link:hover {
+  color: #FF4500; /* Bright orange on hover for interactivity */
+}
 
+/* Styling for links inside blog-text */
+.blog-text a {
+  color: #FFD700; /* Gold color for visibility */
+  text-decoration: underline; /* Underline to differentiate from normal text */
+  font-weight: bold; /* Bold for emphasis */
+  transition: color 0.3s ease-in-out; /* Smooth color change on hover */
+}
+
+.blog-text a:hover {
+  color: #FF4500; /* Bright orange on hover */
+}
 
 
 /*-----------------------------------*\
